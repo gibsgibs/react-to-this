@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavbarItems } from './NavbarItems';
 import { NavbarToggle } from './NavbarToggle';
 import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import { NavbarLogo } from './NavbarLogo';
 
 export class Navbar extends Component {
@@ -21,6 +22,24 @@ export class Navbar extends Component {
         });
     }
 
+    componentDidMount() {
+        document.addEventListener('click', this.handleClickOutside, true);
+    }
+    
+    componentWillUnmount() {
+        document.removeEventListener('click', this.handleClickOutside, true);
+    }
+    
+    handleClickOutside = event => {
+        const domNode = ReactDOM.findDOMNode(this);
+    
+        if (!domNode || !domNode.contains(event.target)) {
+            this.setState({
+                toggled: false
+            });
+        }
+    }
+
     render() {
         return (
             <div>
@@ -36,7 +55,7 @@ export class Navbar extends Component {
                             {NavbarItems.map((item, index) => {
                                 return(
                                 <li key={index} className="nav-item">
-                                    <Link to={item.url} className="nav-links">
+                                    <Link to={item.url} className="nav-links" onClick={this.toggleNavbar}>
                                         <div className="nav-link-icon">
                                             <i className={item.classes}></i>
                                         </div>

@@ -15,8 +15,8 @@ export const NavbarItems = [
         classes: "fas fa-info-circle fa-fw"
     },
     {
-        itemName: "Siphry",
-        url: "siphry",
+        itemName: "Jacob",
+        url: "jacob",
         classes: "fas fa-gift fa-fw"
     }
 ]

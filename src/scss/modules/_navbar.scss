@@ -10,8 +10,9 @@
 }
 
 .nav-content {
+    height: 100%;
     top: 0;
-    background-color: lighten($purple, 5%);
+    background-image: linear-gradient($purple, $dark-gray);
     width: 250px;
     left: -250px;
     position: absolute;
@@ -22,10 +23,14 @@
         transition: all 0.5s ease;
         z-index: 1;
     }
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        left: -100%;
+    }
 }
 
 .nav-item-list {
-    background-color: lighten($purple, 15%); 
     margin: 0;
     padding: 0;
     list-style: none;

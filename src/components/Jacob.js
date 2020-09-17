@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ConfettiGenerator from '../../node_modules/confetti-js/dist/index';
 
 
-export function Siphry() {
+export function Jacob() {
     
     React.useEffect(() => {
         const confettiSettings = { target: 'my-canvas' };
@@ -15,7 +15,7 @@ export function Siphry() {
     return(
     <div>
         <h1 className="text-center pt-2">
-            Happy Birthday Stacia!!!
+            Happy Birthday Jacob!!!
         </h1>
         <hr />
         <canvas id="my-canvas">

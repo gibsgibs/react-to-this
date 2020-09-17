@@ -8,7 +8,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Home } from './components/home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-import { Siphry } from './components/Siphry';
+import { Jacob } from './components/Jacob';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/siphry" component={Siphry} />
+        <Route path="/jacob" component={Jacob} />
     </div>
   );
 }
