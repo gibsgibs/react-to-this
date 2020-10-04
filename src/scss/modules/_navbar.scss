@@ -5,16 +5,15 @@
 }
 
 .nav-logo {
-    max-width: 3rem;
-    max-height: 3rem;
+    width: 8rem;
 }
 
 .nav-content {
     height: 100%;
     top: 0;
     background-image: linear-gradient($purple, $dark-gray);
-    width: 250px;
-    left: -250px;
+    width: 300px;
+    left: -300px;
     position: absolute;
     transition: all 0.5s ease;
 
@@ -98,21 +97,5 @@
     > i {
         vertical-align: middle;
         margin: 1rem;
-    }
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-    .nav-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
     }
 }
