@@ -13,10 +13,5 @@ export const NavbarItems = [
         itemName: "About",
         url: "about",
         classes: "fas fa-info-circle fa-fw"
-    },
-    {
-        itemName: "Jacob",
-        url: "jacob",
-        classes: "fas fa-gift fa-fw"
     }
 ]
