@@ -1,0 +1,26 @@
+#canvas {
+    z-index: -1 !important;
+    position: absolute;
+    width: 100%;
+
+    > canvas {
+        width: inherit;
+    }
+}
+
+#meade-content {
+    z-index: 1;
+
+    & #meade-img {
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        max-width: 50%;
+    }
+}
+
+.invisible {
+    display: none;
+}
