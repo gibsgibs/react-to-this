@@ -8,7 +8,6 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Home } from './components/home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-import { Meade } from './components/Meade';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/meade" component={Meade} />
     </div>
   );
 }
