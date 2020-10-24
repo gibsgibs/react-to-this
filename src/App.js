@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import './scss/main.scss';
 
 import { Navbar } from './components/Navbar/Navbar';
-import { Home } from './components/home';
+import { Home } from './components/Home';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 
